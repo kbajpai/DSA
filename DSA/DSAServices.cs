@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 using System.Xml;
+using DSA.Common;
 using DSA.Config;
 using DSA.Logger;
 using DSA.Properties;
@@ -53,6 +54,10 @@ public class DSAServices {
 
     public static T GetRequiredService<T>() where T : class {
         return GetInstance()!._servicesBuilder.GetRequiredService<T>();
+    }
+
+    public static T? GetSetting<T>(string key, T? defaultValue) {
+        return GetInstance()!._configBuilder.GetValue(key, defaultValue);
     }
 
     private static IConfiguration ConfigurationBuilder() {
@@ -183,6 +188,7 @@ public class DSAServices {
 
         services.AddSingleton(_configBuilder);
         services.AddSingleton(typeof(IAppLogger<>), typeof(AppLogger<>));
+        services.AddSingleton<IDataWarehouse, DataWarehouse>();
         services.AddSingleton<IBSTServices, BSTServices>();
 
         return services.BuildServiceProvider();

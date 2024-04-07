@@ -32,4 +32,15 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="Data\**\*.*">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Data\millionUnique.txt" />
+    <None Remove="Data\tenMillionUnique.txt" />
+  </ItemGroup>
+
 </Project>
