@@ -10,9 +10,9 @@ public static class Constants {
     public const string S_FILE_MILLION_UNIQUE = "millionUnique.txt";
     public const string S_FILE_TEN = "ten.txt";
     public const string S_FILE_TEN_MILLION = "tenMillion.txt";
-    public const string S_FILE_TEN_MILLION_UNIQUE = "tenMillionUnique.txt";
     public const string S_FILE_TEN_MILLION_REVERSE_SORTED = "tenMillionReverseSorted.txt";
     public const string S_FILE_TEN_MILLION_SORTED = "tenMillionSorted.txt";
+    public const string S_FILE_TEN_MILLION_UNIQUE = "tenMillionUnique.txt";
     public const string S_FILE_TEN_SORTED = "tenSorted.txt";
     public const string S_FILE_TEN_THOUSAND = "tenThousand.txt";
     public const string S_FILE_TEN_THOUSAND_SORTED = "tenThousandSorted.txt";

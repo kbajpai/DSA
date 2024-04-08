@@ -6,5 +6,4 @@ public sealed class TreeNode {
     public TreeNode? Left { get; set; }
 
     public TreeNode? Right { get; set; }
-    
 }

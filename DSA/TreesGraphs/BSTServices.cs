@@ -32,6 +32,29 @@ internal sealed class BSTServices : IBSTServices {
         return root == null ? 0 : Math.Max(GetMaximumDepth(root.Left), GetMaximumDepth(root.Right)) + 1;
     }
 
+    public int GetMinimumDifference(TreeNode root) {
+        TreeNode? prev = null;
+        var minDiff = int.MaxValue;
+
+        var stack = new Stack<TreeNode>();
+        while (stack.Count > 0 || root != null) {
+            while (root != null) {
+                stack.Push(root);
+                root = root.Left;
+            }
+
+            root = stack.Pop();
+            if (prev != null) {
+                minDiff = Math.Min(minDiff, root.Value - prev.Value);
+            }
+
+            prev = root;
+            root = root.Right;
+        }
+
+        return minDiff;
+    }
+
     public TreeNode? InvertTree(TreeNode? root) {
         if (root == null)
             return null;
@@ -54,6 +77,7 @@ internal sealed class BSTServices : IBSTServices {
                 queue.Enqueue(current.Right);
             }
         }
+
         return root;
     }
 
@@ -78,7 +102,50 @@ internal sealed class BSTServices : IBSTServices {
     }
 
     public bool IsSymmetric(TreeNode? root) {
-		return IsSameTree(root, InvertTree(root));
+        return IsSameTree(root, InvertTree(root));
+    }
+
+    public bool IsValidBST(TreeNode root) {
+        var values = new List<int>();
+        InOrderTraversal(root, values);
+
+        for (var i = 1; i < values.Count; i++) {
+            if (values[i] <= values[i - 1]) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public double RangeSumBST(TreeNode? root, int low, int high) {
+        if (root == null)
+            return 0L;
+
+        var sum = 0L;
+        if (low <= root.Value && root.Value <= high)
+            sum += root.Value;
+
+        if (root.Value > low)
+            sum += (long)RangeSumBST(root.Left, low, high);
+        if (root.Value < high)
+            sum += (long)RangeSumBST(root.Right, low, high);
+
+        return sum;
+    }
+
+
+    public TreeNode? Search(int n, TreeNode? root) {
+        if (root == null)
+            return null;
+
+        if (root.Value == n)
+            return root;
+
+        if (n < root.Value)
+            return Search(n, root.Left);
+
+        return Search(n, root.Right);
     }
 
     /// <summary>
@@ -100,5 +167,15 @@ internal sealed class BSTServices : IBSTServices {
         }
 
         return root;
+    }
+
+    private void InOrderTraversal(TreeNode node, List<int> values) {
+        if (node == null) {
+            return;
+        }
+
+        InOrderTraversal(node.Left, values);
+        values.Add(node.Value);
+        InOrderTraversal(node.Right, values);
     }
 }

@@ -1,7 +1,6 @@
 namespace DSA.Logger;
 
-public interface IAppLogger<T>
-{
+public interface IAppLogger<T> {
     void Debug(string message);
 
     void Debug(string message, Exception exception);

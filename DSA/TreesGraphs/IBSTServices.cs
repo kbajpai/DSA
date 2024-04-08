@@ -7,9 +7,17 @@ public interface IBSTServices {
 
     int GetMaximumDepth(TreeNode? root);
 
+    int GetMinimumDifference(TreeNode root);
+
     TreeNode? InvertTree(TreeNode? root);
 
     bool IsSameTree(TreeNode? p, TreeNode? q);
 
     bool IsSymmetric(TreeNode? root);
+
+    bool IsValidBST(TreeNode root);
+
+    double RangeSumBST(TreeNode root, int low, int high);
+
+    TreeNode? Search(int n, TreeNode? root);
 }
