@@ -1,0 +1,1288 @@
+<!DOCTYPE html> 
+<html lang="en-US" xml:lang="en-US" > 
+<head><title>Introduction to Algorithms</title> 
+<meta  charset="utf-8" /> 
+<meta name="generator" content="TeX4ht (https://tug.org/tex4ht/)" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1" /> 
+<link rel="stylesheet" type="text/css" href="coreman.css" /> 
+<meta name="src" content="coreman.tex" /> 
+</head><body 
+>
+                                                                  
+
+                                                                  
+<!--l. 94--><p class="indent" >
+                                                                  
+
+                                                                  
+</p>
+   <div class="maketitle">
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+
+<h2 class="titleHead">Introduction to Algorithms</h2>
+<div class="author" ><span 
+class="rm-qhvr-x-x-120">Kunal Bajpai</span></div><br />
+<div class="date" ><span 
+class="rm-qhvr-x-x-120">May 15, 2023</span></div>
+                                                                  
+
+                                                                  
+   </div>
+                                                                  
+
+                                                                  
+   <h2 class="likechapterHead"><a 
+ id="x1-1000"></a>Contents</h2>
+   <div class="tableofcontents">
+   <span class="chapterToc" > <a 
+href="#Q1-1-3">                                                                                                  Preface</a></span>
+<br />   <span class="partToc" >I  <a 
+href="#x1-3000I" id="QQ2-1-4">Foundations</a></span>
+<br />   <span class="chapterToc" > <a 
+href="#Q1-1-6">                                                                                                  Introduction</a></span>
+<br />   <span class="chapterToc" >1 <a 
+href="#x1-90001" id="QQ2-1-11">The Role of Algorithms in Computing</a></span>
+<br />    <span class="sectionToc" >1.1 <a 
+href="#x1-100001.1" id="QQ2-1-12">Algorithms</a></span>
+<br />    <span class="sectionToc" >1.2 <a 
+href="#x1-110001.2" id="QQ2-1-15">Algorithms as a technology</a></span>
+<br />   <span class="chapterToc" >2 <a 
+href="#x1-120002" id="QQ2-1-16">Getting Started</a></span>
+<br />    <span class="sectionToc" >2.1 <a 
+href="#x1-130002.1" id="QQ2-1-17">Insertion sort</a></span>
+<br />    <span class="sectionToc" >2.2 <a 
+href="#x1-140002.2" id="QQ2-1-18">Analyzing algorithms</a></span>
+<br />    <span class="sectionToc" >2.3 <a 
+href="#x1-150002.3" id="QQ2-1-19">Designing algorithms</a></span>
+<br />   <span class="chapterToc" >3 <a 
+href="#x1-160003" id="QQ2-1-20">Growth of Functions</a></span>
+<br />    <span class="sectionToc" >3.1 <a 
+href="#x1-170003.1" id="QQ2-1-21">Asymptotic notation</a></span>
+<br />    <span class="sectionToc" >3.2 <a 
+href="#x1-180003.2" id="QQ2-1-22">Standard notations and common functions</a></span>
+<br />   <span class="partToc" >II  <a 
+href="#x1-19000II" id="QQ2-1-23">Appendix: Mathematical Background</a></span>
+<br />   <span class="appendixToc" >A <a 
+href="#x1-20000A" id="QQ2-1-24">Bibliography</a></span>
+<br />    <span class="sectionToc" >A.1 <a 
+href="#x1-21000A.1" id="QQ2-1-25">References</a></span>
+<br />   <span class="chapterToc" > <a 
+href="#Q1-1-27">                                                                                                  Introduction</a></span>
+<br />   <span class="chapterToc" > <a 
+href="#Q1-1-29">                                                                                                  Summations</a></span>
+<br />    <span class="sectionToc" >A.2 <a 
+href="#x1-24000A.2" id="QQ2-1-30">Summation formulas and properties</a></span>
+<br />    <span class="sectionToc" >A.3 <a 
+href="#x1-25000A.3" id="QQ2-1-31">Bounding summations</a></span>
+<br />   <span class="appendixToc" >A <a 
+href="#x1-26000A" id="QQ2-1-32">Bibliography</a></span>
+<br />    <span class="sectionToc" >A.4 <a 
+href="#x1-27000A.4" id="QQ2-1-33">References</a></span>
+   </div>_______________________________________________________________________________________________________________________
+                                                                  
+
+                                                                  
+<!--l. 101--><p class="indent" >
+                                                                  
+
+                                                                  
+</p>
+   <h2 class="likechapterHead"><a 
+ id="x1-2000"></a>Preface</h2>
+<a 
+ id="Q1-1-3"></a>
+<!--l. 104--><p class="noindent" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
+Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 104--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 104--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+                                                                  
+
+                                                                  
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 104--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 104--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 104--><p class="indent" >
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+</p><!--l. 106--><p class="indent" >
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+</p><!--l. 107--><p class="indent" >
+                                                                  
+
+                                                                  
+</p><!--l. 107--><p class="indent" >
+                                                                  
+
+                                                                  
+</p><!--l. 107--><p class="indent" >
+                                                                  
+
+                                                                  
+</p>
+   <h1 class="partHead"><span class="titlemark">Part I<br /></span><a 
+ id="x1-3000I"></a>Foundations</h1>
+                                                                  
+
+                                                                  
+<!--l. 108--><p class="indent" >
+                                                                  
+
+                                                                  
+</p>
+   <h2 class="likechapterHead"><a 
+ id="x1-4000I"></a>Introduction</h2>
+<a 
+ id="Q1-1-6"></a>
+<!--l. 110--><p class="noindent" >__________________________________________________________________
+</p>
+<!--l. 112--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x1-5000I"></a><span 
+class="rm-qhvb-">Chapter 1</span></span>
+   Discusses algorithms should be considered as a technology, alongside
+technologies such as fast hardware, graphical user interfaces, object-oriented
+systems, and networks.
+</p>
+<!--l. 115--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x1-6000I"></a><span 
+class="rm-qhvb-">Chapter 2</span></span>
+     </p><ol  class="enumerate1" >
+<li 
+  class="enumerate" id="x1-6002x1">
+     <!--l. 117--><p class="noindent" >Pseudocode
+     </p></li>
+<li 
+  class="enumerate" id="x1-6004x2">
+     <!--l. 118--><p class="noindent" >Sorting a list of <span 
+class="rm-qhvri-">n </span>numbers
+     </p></li>
+<li 
+  class="enumerate" id="x1-6006x3">
+     <!--l. 119--><p class="noindent" >Insertion Sort, which uses incremental approach
+                                                                  
+
+                                                                  
+     </p></li>
+<li 
+  class="enumerate" id="x1-6008x4">
+     <!--l. 120--><p class="noindent" >Merge     Sort,     which     uses     recursive     approach     known     as
+     <span 
+class="rm-qhvb-">divide-and-conquer</span>
+     </p></li>
+<li 
+  class="enumerate" id="x1-6010x5">
+     <!--l. 121--><p class="noindent" >Running times between these two algorithms & develop useful notations
+     to express them</p></li></ol>
+<!--l. 124--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x1-7000I"></a><span 
+class="rm-qhvb-">Chapter 3</span></span>
+   Precisely de nes <span 
+class="rm-qhvb-">Asymptotic Notation </span>& mathematical concepts to express
+running times of algorithms
+</p>
+<!--l. 127--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x1-8000I"></a><span 
+class="rm-qhvb-">Chapter 4</span></span>
+   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 129--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+                                                                  
+
+                                                                  
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 129--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 129--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 129--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+                                                                  
+
+                                                                  
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+                                                                  
+
+                                                                  
+</p>
+   <h2 class="chapterHead"><span class="titlemark">Chapter 1</span><br /><a 
+ id="x1-90001"></a>The Role of Algorithms in Computing</h2>
+   <h3 class="sectionHead"><span class="titlemark">1.1    </span> <a 
+ id="x1-100001.1"></a>Algorithms</h3>
+   <!--l. 133-->
+<a 
+ id="x1-10001r1"></a>
+<a 
+ id="x1-10002"></a>
+   <figcaption class="caption" ><span class="id">Listing 1.1:
+         </span><span  
+class="content">Insertion
+         Sort</span></figcaption><!--tex4ht:label?: x1-10001r1.1 --><pre class="lstlisting" id="listing-1"><span class="label"><a 
+ id="x1-10003r1"></a><span 
+class="rm-qhvr-x-x-50">1</span></span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span style="color:#00FFFF"><span 
+class="cmtt-8">public</span></span><span style="color:#000000"> </span><span style="color:#00FFFF"><span 
+class="cmtt-8">static</span></span><span style="color:#000000"> </span><span style="color:#00FFFF"><span 
+class="cmtt-8">int</span></span><span style="color:#000000"><span 
+class="cmtt-8">[]</span></span><span style="color:#000000"> </span><span style="color:#FF00FF"><span 
+class="cmtt-8">InsertionSort</span></span><span style="color:#000000"><span 
+class="cmtt-8">(</span></span><span style="color:#00FFFF"><span 
+class="cmtt-8">int</span></span><span style="color:#000000"><span 
+class="cmtt-8">[]</span></span><span style="color:#000000"> </span><span style="color:#FF00FF"><span 
+class="cmtt-8">a</span></span><span style="color:#000000"><span 
+class="cmtt-8">)</span></span><span 
+class="cmtt-8"> </span><br /> 
+<span class="label"><a 
+ id="x1-10004r2"></a><span 
+class="rm-qhvr-x-x-50">2</span></span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span style="color:#000000"><span 
+class="cmtt-8">{</span></span><span 
+class="cmtt-8"> </span><br /> 
+<span class="label"><a 
+ id="x1-10005r3"></a><span 
+class="rm-qhvr-x-x-50">3</span></span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span style="color:#00FFFF"><span 
+class="cmtt-8">for</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="cmtt-8">(</span></span><span style="color:#FF00FF"><span 
+class="cmtt-8">var</span></span><span style="color:#000000"> </span><span style="color:#FF00FF"><span 
+class="cmtt-8">i</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="cmtt-8">=</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="cmtt-8">1;</span></span><span style="color:#000000"> </span><span style="color:#FF00FF"><span 
+class="cmtt-8">i</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="cmtt-8">&#x003C;</span></span><span style="color:#000000"> </span><span style="color:#FF00FF"><span 
+class="cmtt-8">a</span></span><span style="color:#000000"><span 
+class="cmtt-8">.</span></span><span style="color:#FF00FF"><span 
+class="cmtt-8">Length</span></span><span style="color:#000000"><span 
+class="cmtt-8">;</span></span><span style="color:#000000"> </span><span style="color:#FF00FF"><span 
+class="cmtt-8">i</span></span><span style="color:#000000"><span 
+class="cmtt-8">++)</span></span><span 
+class="cmtt-8"> </span><br /> 
+<span class="label"><a 
+ id="x1-10006r4"></a><span 
+class="rm-qhvr-x-x-50">4</span></span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span style="color:#000000"><span 
+class="cmtt-8">{</span></span><span 
+class="cmtt-8"> </span><br /> 
+<span class="label"><a 
+ id="x1-10007r5"></a><span 
+class="rm-qhvr-x-x-50">5</span></span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span style="color:#FF00FF"><span 
+class="cmtt-8">var</span></span><span style="color:#000000"> </span><span style="color:#FF00FF"><span 
+class="cmtt-8">n</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="cmtt-8">=</span></span><span style="color:#000000"> </span><span style="color:#FF00FF"><span 
+class="cmtt-8">a</span></span><span style="color:#000000"><span 
+class="cmtt-8">[</span></span><span style="color:#FF00FF"><span 
+class="cmtt-8">i</span></span><span style="color:#000000"><span 
+class="cmtt-8">];</span></span><span 
+class="cmtt-8"> </span><br /> 
+<span class="label"><a 
+ id="x1-10008r6"></a><span 
+class="rm-qhvr-x-x-50">6</span></span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span style="color:#FF00FF"><span 
+class="cmtt-8">var</span></span><span style="color:#000000"> </span><span style="color:#FF00FF"><span 
+class="cmtt-8">j</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="cmtt-8">=</span></span><span style="color:#000000"> </span><span style="color:#FF00FF"><span 
+class="cmtt-8">i</span></span><span style="color:#000000"><span 
+class="cmtt-8">;</span></span><span 
+class="cmtt-8"> </span><br /> 
+<span class="label"><a 
+ id="x1-10009r7"></a><span 
+class="rm-qhvr-x-x-50">7</span></span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span style="color:#00FFFF"><span 
+class="cmtt-8">while</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="cmtt-8">(</span></span><span style="color:#FF00FF"><span 
+class="cmtt-8">j</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="cmtt-8">&#x003E;</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="cmtt-8">0</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="cmtt-8">&#x0026;&#x0026;</span></span><span style="color:#000000"> </span><span style="color:#FF00FF"><span 
+class="cmtt-8">n</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="cmtt-8">&#x003C;</span></span><span style="color:#000000"> </span><span style="color:#FF00FF"><span 
+class="cmtt-8">a</span></span><span style="color:#000000"><span 
+class="cmtt-8">[</span></span><span style="color:#FF00FF"><span 
+class="cmtt-8">j</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="cmtt-8">-</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="cmtt-8">1])</span></span><span 
+class="cmtt-8"> </span><br /> 
+<span class="label"><a 
+ id="x1-10010r8"></a><span 
+class="rm-qhvr-x-x-50">8</span></span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span style="color:#000000"><span 
+class="cmtt-8">{</span></span><span 
+class="cmtt-8"> </span><br /> 
+<span class="label"><a 
+ id="x1-10011r9"></a><span 
+class="rm-qhvr-x-x-50">9</span></span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span style="color:#FF00FF"><span 
+class="cmtt-8">a</span></span><span style="color:#000000"><span 
+class="cmtt-8">[</span></span><span style="color:#FF00FF"><span 
+class="cmtt-8">j</span></span><span style="color:#000000"><span 
+class="cmtt-8">]</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="cmtt-8">=</span></span><span style="color:#000000"> </span><span style="color:#FF00FF"><span 
+class="cmtt-8">a</span></span><span style="color:#000000"><span 
+class="cmtt-8">[</span></span><span style="color:#FF00FF"><span 
+class="cmtt-8">j</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="cmtt-8">-</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="cmtt-8">1];</span></span><span 
+class="cmtt-8"> </span><br /> 
+<span class="label"><a 
+ id="x1-10012r10"></a><span 
+class="rm-qhvr-x-x-50">10</span></span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span style="color:#FF00FF"><span 
+class="cmtt-8">j</span></span><span style="color:#000000"><span 
+class="cmtt-8">--;</span></span><span 
+class="cmtt-8"> </span><br /> 
+<span class="label"><a 
+ id="x1-10013r11"></a><span 
+class="rm-qhvr-x-x-50">11</span></span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span style="color:#000000"><span 
+class="cmtt-8">}</span></span><span 
+class="cmtt-8"> </span><br /> 
+<span class="label"><a 
+ id="x1-10014r12"></a><span 
+class="rm-qhvr-x-x-50">12</span></span><span 
+class="cmtt-8"> </span><br /> 
+<span class="label"><a 
+ id="x1-10015r13"></a><span 
+class="rm-qhvr-x-x-50">13</span></span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span style="color:#FF00FF"><span 
+class="cmtt-8">a</span></span><span style="color:#000000"><span 
+class="cmtt-8">[</span></span><span style="color:#FF00FF"><span 
+class="cmtt-8">j</span></span><span style="color:#000000"><span 
+class="cmtt-8">]</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="cmtt-8">=</span></span><span style="color:#000000"> </span><span style="color:#FF00FF"><span 
+class="cmtt-8">n</span></span><span style="color:#000000"><span 
+class="cmtt-8">;</span></span><span 
+class="cmtt-8"> </span><br /> 
+<span class="label"><a 
+ id="x1-10016r14"></a><span 
+class="rm-qhvr-x-x-50">14</span></span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span style="color:#000000"><span 
+class="cmtt-8">}</span></span><span 
+class="cmtt-8"> </span><br /> 
+<span class="label"><a 
+ id="x1-10017r15"></a><span 
+class="rm-qhvr-x-x-50">15</span></span><span 
+class="cmtt-8"> </span><br /> 
+<span class="label"><a 
+ id="x1-10018r16"></a><span 
+class="rm-qhvr-x-x-50">16</span></span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span style="color:#00FFFF"><span 
+class="cmtt-8">return</span></span><span style="color:#000000"> </span><span style="color:#FF00FF"><span 
+class="cmtt-8">a</span></span><span style="color:#000000"><span 
+class="cmtt-8">;</span></span><span 
+class="cmtt-8"> </span><br /> 
+<span class="label"><a 
+ id="x1-10019r17"></a><span 
+class="rm-qhvr-x-x-50">17</span></span><span 
+class="cmtt-8"> </span><span 
+class="cmtt-8"> </span><span style="color:#000000"><span 
+class="cmtt-8">}</span></span></pre>
+   
+<!--l. 154--><p class="noindent" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
+Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 154--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 154--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+                                                                  
+
+                                                                  
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 154--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 154--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 154--><p class="indent" >
+                                                                  
+
+                                                                  
+</p>
+   <h3 class="sectionHead"><span class="titlemark">1.2    </span> <a 
+ id="x1-110001.2"></a>Algorithms as a technology</h3>
+<!--l. 158--><p class="noindent" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
+Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 158--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 158--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 158--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+                                                                  
+
+                                                                  
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 158--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 158--><p class="indent" >
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+</p><!--l. 160--><p class="indent" >
+                                                                  
+
+                                                                  
+</p>
+   <h2 class="chapterHead"><span class="titlemark">Chapter 2</span><br /><a 
+ id="x1-120002"></a>Getting Started</h2>
+   <h3 class="sectionHead"><span class="titlemark">2.1    </span> <a 
+ id="x1-130002.1"></a>Insertion sort</h3>
+<!--l. 163--><p class="noindent" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
+Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 163--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 163--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+                                                                  
+
+                                                                  
+semper. 
+</p><!--l. 163--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 163--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 163--><p class="indent" >
+                                                                  
+
+                                                                  
+</p>
+   <h3 class="sectionHead"><span class="titlemark">2.2    </span> <a 
+ id="x1-140002.2"></a>Analyzing algorithms</h3>
+<!--l. 167--><p class="noindent" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
+Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 167--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 167--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 167--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+                                                                  
+
+                                                                  
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 167--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 167--><p class="indent" >
+                                                                  
+
+                                                                  
+</p>
+   <h3 class="sectionHead"><span class="titlemark">2.3    </span> <a 
+ id="x1-150002.3"></a>Designing algorithms</h3>
+<!--l. 171--><p class="noindent" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
+Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 171--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 171--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 171--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+                                                                  
+
+                                                                  
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 171--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 171--><p class="indent" >
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+</p><!--l. 173--><p class="indent" >
+                                                                  
+
+                                                                  
+</p>
+   <h2 class="chapterHead"><span class="titlemark">Chapter 3</span><br /><a 
+ id="x1-160003"></a>Growth of Functions</h2>
+   <h3 class="sectionHead"><span class="titlemark">3.1    </span> <a 
+ id="x1-170003.1"></a>Asymptotic notation</h3>
+<!--l. 176--><p class="noindent" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
+Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 176--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 176--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+                                                                  
+
+                                                                  
+semper. 
+</p><!--l. 176--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 176--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 176--><p class="indent" >
+                                                                  
+
+                                                                  
+</p>
+   <h3 class="sectionHead"><span class="titlemark">3.2    </span> <a 
+ id="x1-180003.2"></a>Standard notations and common functions</h3>
+<!--l. 180--><p class="noindent" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
+Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 180--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 180--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 180--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+                                                                  
+
+                                                                  
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 180--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 180--><p class="indent" >
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+</p><!--l. 182--><p class="indent" >
+                                                                  
+
+                                                                  
+</p><!--l. 182--><p class="indent" >
+                                                                  
+
+                                                                  
+</p><!--l. 182--><p class="indent" >
+                                                                  
+
+                                                                  
+</p>
+   <h1 class="partHead"><span class="titlemark">Part II<br /></span><a 
+ id="x1-19000II"></a>Appendix: Mathematical Background</h1>
+                                                                  
+
+                                                                  
+<!--l. 185--><p class="indent" >
+                                                                  
+
+                                                                  
+<a 
+ id="x1-19001r20"></a>
+</p>
+   <h2 class="appendixHead"><span class="titlemark">Appendix A</span><br /><a 
+ id="x1-20000A"></a>Bibliography</h2>
+   <h3 class="sectionHead"><span class="titlemark">A.1    </span> <a 
+ id="x1-21000A.1"></a>References</h3>
+<!--l. 188--><p class="noindent" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
+Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 188--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 188--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+                                                                  
+
+                                                                  
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 188--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 188--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 188--><p class="indent" >
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+</p><!--l. 190--><p class="indent" >
+                                                                  
+
+                                                                  
+</p>
+   <h2 class="likechapterHead"><a 
+ id="x1-22000A.1"></a>Introduction</h2>
+<a 
+ id="Q1-1-27"></a>
+                                                                  
+
+                                                                  
+<!--l. 193--><p class="indent" >
+                                                                  
+
+                                                                  
+</p>
+   <h2 class="likechapterHead"><a 
+ id="x1-23000A.1"></a>Summations</h2>
+<a 
+ id="Q1-1-29"></a>
+   <h3 class="sectionHead"><span class="titlemark">A.2    </span> <a 
+ id="x1-24000A.2"></a>Summation formulas and properties</h3>
+<!--l. 196--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">A.3    </span> <a 
+ id="x1-25000A.3"></a>Bounding summations</h3>
+<!--l. 198--><p class="noindent" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
+Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 198--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+                                                                  
+
+                                                                  
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 198--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 198--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 198--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+                                                                  
+
+                                                                  
+</p><!--l. 198--><p class="indent" >
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+</p><!--l. 201--><p class="indent" >
+                                                                  
+
+                                                                  
+</p>
+   <h2 class="appendixHead"><a 
+ id="x1-26000A"></a>Bibliography</h2>
+   <h3 class="sectionHead"><span class="titlemark">A.4    </span> <a 
+ id="x1-27000A.4"></a>References</h3>
+<!--l. 204--><p class="noindent" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
+Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 204--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 204--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+                                                                  
+
+                                                                  
+semper. 
+</p><!--l. 204--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 204--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis
+sem. Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante.
+Donec ullamcorper, felis non sodales commodo, lectus velit ultrices augue,
+a dignissim nibh lectus placerat pede. Vivamus nunc nunc, molestie ut,
+ultricies vel, semper in, velit. Ut porttitor. Praesent in sapien. Lorem ipsum
+dolor sit amet, consectetuer adipiscing elit. Duis fringilla tristique neque. Sed
+interdum libero ut metus. Pellentesque placerat. Nam rutrum augue a leo.
+Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit blandit
+mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis.
+Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan
+semper. 
+</p><!--l. 204--><p class="indent" >
+                                                                  
+
+                                                                  
+</p>
+    
+</body> 
+</html>
+                                                                  
+
+

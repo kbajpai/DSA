@@ -1,0 +1,206 @@
+\documentclass[letterpaper]{book}
+
+\usepackage{tgheros}\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{blindtext}
+\usepackage{setspace}
+\setcounter{secnumdepth}{1}
+%\usepackage{color}
+\usepackage{xcolor}
+\usepackage{tocloft}
+\usepackage{listings}
+\lstloadlanguages{C,C++,csh,Java}
+
+\renewcommand\cftaftertoctitle{\par\noindent\hrulefill\par\vskip-4.3em}
+
+%%%%Add chapter functionality in article class
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,
+	urlcolor=cyan,
+	pdftitle={Introduction to Algorithms},
+}
+\urlstyle{same}
+%%%%
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{cloudwhite}{rgb}{0.9412, 0.9608, 0.8471}
+\definecolor{cream}{rgb}{1.0, 0.95, 0.80}
+
+\lstset{
+	language=csh,
+	basicstyle=\footnotesize\ttfamily,
+	numbers=left,
+	numberstyle=\tiny,
+	numbersep=5pt,
+	tabsize=2,
+	extendedchars=true,
+	breaklines=true,
+	frame=b,
+	stringstyle=\color{blue}\ttfamily,
+	showspaces=false,
+	showtabs=false,
+	xleftmargin=17pt,
+	framexleftmargin=17pt,
+	framexrightmargin=5pt,
+	framexbottommargin=4pt,
+	commentstyle=\color{green},
+	morecomment=[l]{//}, %use comment-line-style!
+	morecomment=[s]{/*}{*/}, %for multiline comments
+	showstringspaces=false,
+	morekeywords={ abstract, event, new, struct,
+		as, explicit, null, switch,
+		base, extern, object, this,
+		bool, false, operator, throw,
+		break, finally, out, true,
+		byte, fixed, override, try,
+		case, float, params, typeof,
+		catch, for, private, uint,
+		char, foreach, protected, ulong,
+		checked, goto, public, unchecked,
+		class, if, readonly, unsafe,
+		const, implicit, ref, ushort,
+		continue, in, return, using,
+		decimal, int, sbyte, virtual,
+		default, interface, sealed, volatile,
+		delegate, internal, short, void,
+		do, is, sizeof, while,
+		double, lock, stackalloc,
+		else, long, static,
+		enum, namespace, string},
+	keywordstyle=\color{cyan},
+	identifierstyle=\color{magenta},
+	backgroundcolor=\color{cream},
+}
+
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{darkgray}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}}
+
+%opening
+\title{Introduction to Algorithms}
+\author{Kunal Bajpai}
+
+\onehalfspacing
+\begin{document}
+
+	\frontmatter
+
+	\maketitle
+	\tableofcontents
+	\noindent
+	\hrulefill
+
+	\chapter*{Preface}
+	\addcontentsline{toc}{chapter}{\protect\numberline{}Preface}
+	\Blindtext
+	\newpage
+
+	\mainmatter
+	\part{Foundations}
+	\chapter*{Introduction}
+	\addcontentsline{toc}{chapter}{\protect\numberline{}Introduction}
+	\hrulefill
+
+	\paragraph{Chapter 1}
+	Discusses algorithms should be considered as a technology, alongside technologies such as fast hardware, graphical user interfaces, object-oriented systems, and networks.
+
+	\paragraph{Chapter 2}
+	\begin{enumerate}
+		\item Pseudocode 
+		\item Sorting a list of \textit{n} numbers
+		\item Insertion Sort, which uses incremental approach
+		\item Merge Sort, which uses recursive approach known as \textbf{divide-and-conquer}
+		\item Running times between these two algorithms \& develop useful notations to express them 
+	\end{enumerate}
+	
+	\paragraph{Chapter 3} 
+	Precisely defines \textbf{Asymptotic Notation} \& mathematical concepts to express running times of algorithms 
+
+	\paragraph{Chapter 4} 
+	\Blindtext	
+
+	\chapter{The Role of Algorithms in Computing}
+	\section{Algorithms}
+
+	\begin{lstlisting}[language={[Sharp]C}, caption={Insertion Sort}, label={Script}]
+	public static int[] InsertionSort(int[] a)
+	{
+		for (var i = 1; i < a.Length; i++)
+		{
+			var n = a[i];
+			var j = i;
+			while (j > 0 && n < a[j - 1])
+			{
+				a[j] = a[j - 1];
+				j--;
+			}
+
+			a[j] = n;
+		}
+
+		return a;
+	}
+	\end{lstlisting}
+
+	\Blindtext
+	\newpage
+
+	\section{Algorithms as a technology}
+	\Blindtext
+	\newpage
+
+	\chapter{Getting Started}
+	\section{Insertion sort}
+	\Blindtext
+	\newpage
+
+	\section{Analyzing algorithms}
+	\Blindtext
+	\newpage
+
+	\section{Designing algorithms}
+	\Blindtext
+	\newpage
+
+	\chapter{Growth of Functions}
+	\section{Asymptotic notation}
+	\Blindtext
+	\newpage
+
+	\section{Standard notations and common functions}
+	\Blindtext
+	\newpage
+
+	\part{Appendix: Mathematical Background}
+
+	\appendix
+	\chapter{Bibliography}
+	\section{References}
+	\Blindtext
+	\newpage
+
+	\chapter*{Introduction}
+	\addcontentsline{toc}{chapter}{\protect\numberline{}Introduction}
+
+	\chapter*{Summations}
+	\addcontentsline{toc}{chapter}{\protect\numberline{}Summations}
+	\section{Summation formulas and properties}
+	\section{Bounding summations}
+	\Blindtext
+	\newpage
+
+	\backmatter
+	\chapter{Bibliography}
+	\section{References}
+	\Blindtext
+	\newpage
+
+\end{document}
