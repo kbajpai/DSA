@@ -32,10 +32,11 @@
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 \definecolor{cloudwhite}{rgb}{0.9412, 0.9608, 0.8471}
 \definecolor{cream}{rgb}{1.0, 0.95, 0.80}
+\definecolor{codebg}{rgb}{216, 216, 216}
 
 \lstset{
 	language=csh,
-	basicstyle=\footnotesize\ttfamily,
+	basicstyle=\small\ttfamily,
 	numbers=left,
 	numberstyle=\tiny,
 	numbersep=5pt,
@@ -50,33 +51,30 @@
 	framexleftmargin=17pt,
 	framexrightmargin=5pt,
 	framexbottommargin=4pt,
-	commentstyle=\color{green},
+	commentstyle=\color{gray},
 	morecomment=[l]{//}, %use comment-line-style!
 	morecomment=[s]{/*}{*/}, %for multiline comments
 	showstringspaces=false,
-	morekeywords={ abstract, event, new, struct,
-		as, explicit, null, switch,
-		base, extern, object, this,
-		bool, false, operator, throw,
-		break, finally, out, true,
-		byte, fixed, override, try,
-		case, float, params, typeof,
-		catch, for, private, uint,
-		char, foreach, protected, ulong,
-		checked, goto, public, unchecked,
-		class, if, readonly, unsafe,
-		const, implicit, ref, ushort,
-		continue, in, return, using,
-		decimal, int, sbyte, virtual,
-		default, interface, sealed, volatile,
-		delegate, internal, short, void,
-		do, is, sizeof, while,
-		double, lock, stackalloc,
-		else, long, static,
-		enum, namespace, string},
-	keywordstyle=\color{cyan},
-	identifierstyle=\color{magenta},
-	backgroundcolor=\color{cream},
+	morekeywords={
+		abstract, add, alias, allows, and, args, as, ascending, 
+		async, await, base, bool, break, by, byte, case, catch, 
+		char, checked, class, const, continue, decimal, default, 
+		delegate, descending, do, double, dynamic, else, enum, 
+		equals, event, explicit, extern, false, file, finally, 
+		fixed, float, for, foreach, from, get, global, goto, 
+		group, if, implicit, in, init, int, interface, internal, 
+		into, is, join, let, lock, long, managed, nameof, namespace, 
+		new, nint, not, notnull, nuint, null, object, on, operator, 
+		or, orderby, out, override, params, partial, private, protected, 
+		public, readonly, record, ref, remove, required, return, sbyte, 
+		scoped, sealed, select, set, short, sizeof, stackalloc, static, 
+		string, struct, switch, this, throw, true, try, typeof, uint, 
+		ulong, unchecked, unmanaged, unsafe, ushort, using, value, var, 
+		virtual, void, volatile, when, where, while, with, yield
+	},
+	keywordstyle=\color{blue},
+	identifierstyle=\color{darkgray},	
+	backgroundcolor=\color{codebg},
 }
 
 \usepackage{caption}
@@ -131,8 +129,8 @@
 	\section{Algorithms}
 
 	\begin{lstlisting}[language={[Sharp]C}, caption={Insertion Sort}, label={Script}]
-	public static int[] InsertionSort(int[] a)
-	{
+	//Here's the comment
+	public static int[] InsertionSort(int[] a) {
 		for (var i = 1; i < a.Length; i++)
 		{
 			var n = a[i];
