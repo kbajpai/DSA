@@ -9,9 +9,7 @@ bibtex dissertation
 xelatex dissertation
 xelatex dissertation
 
-# Hide the log.
-mv "dissertation.log" ".logged"
-
 cp *.pdf publish/
+rm *.pdf
 
 git clean -d  -fx -f
