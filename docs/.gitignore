@@ -8,3 +8,5 @@ dist/
 *.blg
 *.bbl
 *.logged
+
+publish/
