@@ -1,6 +1,6 @@
-﻿namespace LeetCode.Misc;
+﻿namespace LeetCode;
 
-public class Fibonacci {
+public static class Recursion {
     public static int Calculate(int n) {
         if (n <= 1) {
             return n;
