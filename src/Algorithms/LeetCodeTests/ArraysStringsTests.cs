@@ -31,10 +31,10 @@ public class ArraysStringsTests {
     [TestMethod]
     public void IsPalindrome_MixedCasePalindrome_ReturnsTrue() {
         // Arrange
-        var input = "RaceCar";
+        const string S_INPUT = "RaceCar";
 
         // Act
-        var result = ArraysStrings.IsPalindrome(input);
+        var result = ArraysStrings.IsPalindrome(S_INPUT);
 
         // Assert
         Assert.IsFalse(result);
@@ -55,10 +55,10 @@ public class ArraysStringsTests {
     [TestMethod]
     public void IsPalindrome_SingleCharacter_ReturnsTrue() {
         // Arrange
-        var input = "a";
+        const string S_INPUT = "a";
 
         // Act
-        var result = ArraysStrings.IsPalindrome(input);
+        var result = ArraysStrings.IsPalindrome(S_INPUT);
 
         // Assert
         Assert.IsTrue(result);
@@ -157,5 +157,65 @@ public class ArraysStringsTests {
 
         // Assert
         Assert.AreEqual("!dlroW ,olleH", result);
+    }
+
+    [TestMethod]
+    public void SortedSquares_AllNegativeNumbers_ReturnsSortedSquares() {
+        // Arrange
+        int[] input = [-5, -4, -3, -2, -1];
+
+        // Act
+        var result = ArraysStrings.SortedSquares(input);
+
+        // Assert
+        CollectionAssert.AreEqual((int[]) [1, 4, 9, 16, 25], result);
+    }
+
+    [TestMethod]
+    public void SortedSquares_AllPositiveNumbers_ReturnsSortedSquares() {
+        // Arrange
+        int[] input = [1, 2, 3, 4, 5];
+
+        // Act
+        var result = ArraysStrings.SortedSquares(input);
+
+        // Assert
+        CollectionAssert.AreEqual((int[]) [1, 4, 9, 16, 25], result);
+    }
+
+    [TestMethod]
+    public void SortedSquares_EmptyArray_ReturnsEmptyArray() {
+        // Arrange
+        var input = Array.Empty<int>();
+
+        // Act
+        var result = ArraysStrings.SortedSquares(input);
+
+        // Assert
+        CollectionAssert.AreEqual(Array.Empty<int>(), result);
+    }
+
+    [TestMethod]
+    public void SortedSquares_MixedNumbers_ReturnsSortedSquares() {
+        // Arrange
+        int[] input = [-4, -1, 0, 3, 10];
+
+        // Act
+        var result = ArraysStrings.SortedSquares(input);
+
+        // Assert
+        CollectionAssert.AreEqual((int[]) [0, 1, 9, 16, 100], result);
+    }
+
+    [TestMethod]
+    public void SortedSquares_SingleElement_ReturnsSquare() {
+        // Arrange
+        int[] input = [3];
+
+        // Act
+        var result = ArraysStrings.SortedSquares(input);
+
+        // Assert
+        CollectionAssert.AreEqual((int[]) [9], result);
     }
 }
