@@ -112,6 +112,98 @@ public class ArraysStringsTests {
     }
 
     [TestMethod]
+    public void MaxSubArray_AllElementsGreaterThanK_ReturnsZero() {
+        // Arrange
+        var k = 5;
+        int[] input = [6, 7, 8, 9];
+
+        // Act
+        var result = ArraysStrings.MaxSubArray(k, input);
+
+        // Assert
+        Assert.AreEqual(0, result);
+    }
+
+    [TestMethod]
+    [ExpectedException(typeof(ArgumentException))]
+    public void MaxSubArray_EmptyArray_ReturnsZero() {
+        // Arrange
+        var k = 5;
+        var input = Array.Empty<int>();
+
+        // Act
+        var result = ArraysStrings.MaxSubArray(k, input);
+
+        // Assert
+        Assert.AreEqual(0, result);
+    }
+
+    [TestMethod]
+    public void MaxSubArray_MixedElements_ReturnsCorrectLength() {
+        // Arrange
+        var k = 8;
+        int[] input = [1, 2, 3, 4, 5];
+
+        // Act
+        var result = ArraysStrings.MaxSubArray(k, input);
+
+        // Assert
+        Assert.AreEqual(3, result);
+    }
+
+    [TestMethod]
+    public void MaxSubArray_MultipleElements_ReturnsCorrectLength() {
+        // Arrange
+        var k = 5;
+        int[] input = [1, 2, 1, 0, 1, 1, 2];
+
+        // Act
+        var result = ArraysStrings.MaxSubArray(k, input);
+
+        // Assert
+        Assert.AreEqual(5, result);
+    }
+
+    [TestMethod]
+    public void MaxSubArray_SingleElementGreaterThanK_ReturnsZero() {
+        // Arrange
+        var k = 5;
+        int[] input = [6];
+
+        // Act
+        var result = ArraysStrings.MaxSubArray(k, input);
+
+        // Assert
+        Assert.AreEqual(0, result);
+    }
+
+    [TestMethod]
+    public void MaxSubArray_SingleElementLessThanK_ReturnsOne() {
+        // Arrange
+        var k = 5;
+        int[] input = [3];
+
+        // Act
+        var result = ArraysStrings.MaxSubArray(k, input);
+
+        // Assert
+        Assert.AreEqual(1, result);
+    }
+
+    [TestMethod]
+    public void MaxSubArray_AllGreaterThanK_ReturnsZero() {
+        // Arrange
+        var k = 5;
+        int[] input = [10, 7, 8, 6, 8, 10, 22];
+
+        // Act
+        var result = ArraysStrings.MaxSubArray(k, input);
+
+        // Assert
+        Assert.AreEqual(0, result);
+    }
+
+    [TestMethod]
     public void ReverseString_EmptyString_ReturnsEmptyString() {
         // Arrange
         var input = string.Empty;

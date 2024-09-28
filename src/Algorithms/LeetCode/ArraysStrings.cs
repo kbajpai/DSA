@@ -62,6 +62,37 @@ public static class ArraysStrings {
     }
 
     /// <summary>
+    ///     Finds the length of the longest sub-array with a sum less than or equal to the specified value.
+    /// </summary>
+    /// <param name="k">The maximum sum of the sub-array.</param>
+    /// <param name="nums">The array of integers.</param>
+    /// <returns>The length of the longest sub-array with a sum less than or equal to k.</returns>
+    /// <exception cref="ArgumentException">Thrown when the array is null or empty.</exception>
+    /// <remarks>
+    ///     Space Complexity: O(1) - Uses a constant amount of extra space.
+    ///     Time Complexity: O(n) - Iterates through the array once, where n is the length of the array.
+    /// </remarks>
+    public static int MaxSubArray(int k, int[] nums) {
+        if (nums == null || nums.Length == 0) {
+            throw new ArgumentException("Array cannot be null or empty");
+        }
+
+        int l = 0, currSum = 0, maxLen = 0;
+
+        for (var r = 0; r < nums.Length; r++) {
+            currSum += nums[r];
+
+            while (currSum > k && l <= r) {
+                currSum -= nums[l++];
+            }
+
+            maxLen = Math.Max(maxLen, r - l + 1);
+        }
+
+        return maxLen;
+    }
+
+    /// <summary>
     ///     Reverses the specified string.
     /// </summary>
     /// <param name="s">The string to reverse.</param>
@@ -90,17 +121,29 @@ public static class ArraysStrings {
         return sb.ToString();
     }
 
+    /// <summary>
+    ///     Returns an array of the squares of each number sorted in non-decreasing order.
+    /// </summary>
+    /// <param name="nums">The input array of integers.</param>
+    /// <returns>An array of the squares of each number sorted in non-decreasing order.</returns>
+    /// <remarks>
+    ///     Space Complexity: O(n) - Uses extra space proportional to the length of the input array.
+    ///     Time Complexity: O(n) - Iterates through the array once, where n is the length of the array.
+    /// </remarks>
     public static int[] SortedSquares(int[] nums) {
         var sortedNums = new int[nums.Length];
         int l = 0, r = nums.Length - 1;
 
         for (var i = nums.Length - 1; i >= 0; i--) {
-            if (Math.Abs(nums[l]) > Math.Abs(nums[r])) {
-                sortedNums[i] = nums[l] * nums[l];
+            var leftSquare = nums[l] * nums[l];
+            var rightSquare = nums[r] * nums[r];
+
+            if (leftSquare > rightSquare) {
+                sortedNums[i] = leftSquare;
                 l++;
             }
             else {
-                sortedNums[i] = nums[r] * nums[r];
+                sortedNums[i] = rightSquare;
                 r--;
             }
         }
