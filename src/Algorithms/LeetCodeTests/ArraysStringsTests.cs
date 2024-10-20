@@ -125,6 +125,19 @@ public class ArraysStringsTests {
     }
 
     [TestMethod]
+    public void MaxSubArray_AllGreaterThanK_ReturnsZero() {
+        // Arrange
+        var k = 5;
+        int[] input = [10, 7, 8, 6, 8, 10, 22];
+
+        // Act
+        var result = ArraysStrings.MaxSubArray(k, input);
+
+        // Assert
+        Assert.AreEqual(0, result);
+    }
+
+    [TestMethod]
     [ExpectedException(typeof(ArgumentException))]
     public void MaxSubArray_EmptyArray_ReturnsZero() {
         // Arrange
@@ -188,19 +201,6 @@ public class ArraysStringsTests {
 
         // Assert
         Assert.AreEqual(1, result);
-    }
-
-    [TestMethod]
-    public void MaxSubArray_AllGreaterThanK_ReturnsZero() {
-        // Arrange
-        var k = 5;
-        int[] input = [10, 7, 8, 6, 8, 10, 22];
-
-        // Act
-        var result = ArraysStrings.MaxSubArray(k, input);
-
-        // Assert
-        Assert.AreEqual(0, result);
     }
 
     [TestMethod]
